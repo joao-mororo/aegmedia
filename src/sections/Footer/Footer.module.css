@@ -1,0 +1,36 @@
+.section {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 2rem;
+    /* gap: 1rem; */
+}
+
+.logo {
+    width: 10rem;
+    margin: 1rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.link {
+    font-size: 1.7rem;
+    color: #fff;
+    transition: .3s;
+}
+
+.link:hover {
+    color: var(--primary);
+}
+
+.copyright {
+    color: #fff;
+    font-size: 1rem;
+}

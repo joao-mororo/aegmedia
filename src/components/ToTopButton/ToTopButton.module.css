@@ -1,0 +1,31 @@
+.button {
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--primary); /* Set a background color */
+    color: #000; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    height: 3rem;
+    width: 3rem;
+    border-radius: 25px; /* Rounded corners */
+    font-size: 2rem;
+    transition: .2s;
+}
+
+.button:hover {
+    background-color: var(--primary-dark);
+}
+
+@media screen and (max-width: 600px) {
+    .button {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+    }
+}

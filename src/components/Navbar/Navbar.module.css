@@ -1,0 +1,32 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 5rem;
+    position: absolute;
+    width: 100%;
+}
+
+.logo {
+    width: 7rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #fff;
+    transition: .3s;
+}
+
+.button:hover {
+    color: var(--primary);
+}

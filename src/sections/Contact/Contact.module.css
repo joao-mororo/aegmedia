@@ -1,0 +1,99 @@
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg2);
+    width: 100%;
+    padding: 5rem;
+}
+
+.title {
+    color: var(--primary);
+    font-family: "Montserrat";
+}
+
+.image {
+    width: 50%;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    background-color: #191f36;
+    border: none;
+    outline: none;
+    margin: .3rem 0;
+    padding: .5rem;
+    border-bottom: solid 1px transparent;
+    transition: .1s;
+    caret-color: var(--primary);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    width: 70%;
+}
+
+.input:focus {
+    border-bottom: solid 1px var(--primary);
+}
+
+.message {
+    min-height: 7rem;
+}
+
+.form section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+}
+
+.submit {
+    background-color: transparent;
+    border: solid 1px var(--primary);
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: .2s;
+}
+
+.submit:hover {
+    background-color: var(--primary);
+    color: #000;
+}
+
+.form p {
+    color: #fff;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.whatsapp {
+    background-color: #198754;
+    border: none;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: .2s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.3rem;
+}
+
+.whatsapp:hover {
+    background-color: #0f5132;
+}
