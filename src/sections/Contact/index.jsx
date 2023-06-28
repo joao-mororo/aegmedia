@@ -1,10 +1,13 @@
 import React, {useContext, useState} from 'react'
 import ContactUs from '../../assets/contact_us.svg'
-import { BsWhatsapp } from 'react-icons/bs'
+import { LINKS } from '../../data/constants'
+import { useMediaQuery } from 'react-responsive'
 import { ScrollContext } from '../../contexts/scroll'
+import { BsWhatsapp } from 'react-icons/bs'
 import styles from './Contact.module.css'
 
 const Contact = () => {
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 600px)' })
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [whatsapp, setWhatsapp] = useState("");
@@ -24,9 +27,10 @@ const Contact = () => {
 
     return (
         <div className={styles.section} ref={contactRef}>
-            <img className={styles.image} src={ContactUs} alt="" />
+            {!isTabletOrMobile && <img className={styles.image} src={ContactUs} alt="" />}
             <form className={styles.form} onSubmit={(e) => submit(e)}>
                 <h1 className={styles.title}>Nos deixe uma mensagem</h1>
+                {isTabletOrMobile && <img className={styles.image} src={ContactUs} alt="" />}
                 <input
                     className={`${styles.input}`}
                     type="text"
@@ -66,7 +70,7 @@ const Contact = () => {
 
                 <a 
                     className={styles.whatsapp}
-                    href="http://wa.me/5581991289676"
+                    href={LINKS.whatsapp}
                     target='_blank'
                     rel='noreferrer'
                 >

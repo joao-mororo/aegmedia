@@ -97,3 +97,28 @@
 .whatsapp:hover {
     background-color: #0f5132;
 }
+
+@media screen and (max-width: 600px) {
+    .section {
+        padding: 5rem 0;
+        flex-direction: column;
+    }
+
+    .form {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image {
+        width: 80%;
+        margin: 2rem 0;
+    }
+
+    .input {
+        width: 85%;
+    }
+
+    .form section {
+        width: 85%;
+    }
+}

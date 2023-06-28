@@ -27,3 +27,22 @@
 .span {
     color: var(--primary);
 }
+
+@media screen and (max-width: 600px) {
+    .section {
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .wrapper {
+        width: 80%;
+        align-items: center !important;
+    }
+
+    .image {
+        height: 50vh;
+    }
+}

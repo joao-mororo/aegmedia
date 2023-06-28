@@ -1,12 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { IoIosArrowUp } from 'react-icons/io'
+import { ScrollContext } from '../../contexts/scroll'
 import styles from './ToTopButton.module.css'
 
 const ToTopButton = () => {
-    function toTop() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
+    const { scrollToSection, homeRef } = useContext(ScrollContext)
 
     function scrollFunction() {
         let mybutton = document.getElementsByClassName('toTopButton')[0]
@@ -22,7 +20,7 @@ const ToTopButton = () => {
     return (
         <button 
             className={`${styles.button} toTopButton`} 
-            onClick={toTop} 
+            onClick={() => scrollToSection(homeRef)} 
         >
             <IoIosArrowUp />
         </button>

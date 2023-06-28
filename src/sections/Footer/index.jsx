@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../../assets/logo.png'
+import { LINKS } from '../../data/constants'
 import { BsFacebook, BsInstagram, BsLinkedin, BsWhatsapp } from 'react-icons/bs' 
 import styles from './Footer.module.css'
 
@@ -12,10 +13,10 @@ const Footer = () => {
         <footer className={styles.section}>
             <img className={styles.logo} src={Logo} alt="" />
             <div className={styles.socials}>
-                <Link href="https://www.facebook.com/AEGMEDIAMKT"><BsFacebook /></Link>
-                <Link href="https://www.instagram.com/aegmedia/"><BsInstagram /></Link>
-                <Link href="https://www.linkedin.com/company/aeg-mediaa/"><BsLinkedin /></Link>
-                <Link href="http://wa.me/5581991289676"><BsWhatsapp /></Link>
+                <Link href={LINKS.facebook}><BsFacebook /></Link>
+                <Link href={LINKS.instagram}><BsInstagram /></Link>
+                <Link href={LINKS.linkedin}><BsLinkedin /></Link>
+                <Link href={LINKS.whatsapp}><BsWhatsapp /></Link>
             </div>
             <p className={styles.copyright}>AEG Media &#169; Copyright {new Date().getFullYear()}</p>
         </footer>

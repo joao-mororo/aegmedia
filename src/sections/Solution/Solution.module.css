@@ -59,3 +59,19 @@
     padding: .5rem;
     border-radius: 25px;
 }
+
+@media screen and (max-width: 600px) {
+    .title {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .body {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+}

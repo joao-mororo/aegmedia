@@ -38,3 +38,20 @@
 .link:hover {
     color: var(--primary);
 }
+
+@media screen and (max-width: 600px) {
+    .section {
+        padding: 5rem 0;
+        justify-content: center;
+    }
+
+    .wrapper {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image {
+        width: 95%;
+    }
+}

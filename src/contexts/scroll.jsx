@@ -3,6 +3,7 @@ import { createContext, useRef } from "react";
 export const ScrollContext = createContext()
 
 export default function ScrollProvider({children}) {
+    const homeRef = useRef(null)
     const servicesRef = useRef(null)
     const commentsRef = useRef(null)
     const authorityRef = useRef(null)
@@ -17,7 +18,7 @@ export default function ScrollProvider({children}) {
     
     return (
         <ScrollContext.Provider
-            value={{scrollToSection, servicesRef, commentsRef, authorityRef, contactRef}}
+            value={{scrollToSection, homeRef, servicesRef, commentsRef, authorityRef, contactRef}}
         >
             {children}
         </ScrollContext.Provider>

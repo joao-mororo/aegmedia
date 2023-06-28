@@ -35,3 +35,14 @@
 .msg {
     font-style: italic;
 }
+
+@media screen and (max-width: 600px) {
+    .section {
+        padding: 5rem 0;
+        text-align: center;
+    }
+
+    .comment {
+        width: 90%;
+    }
+}

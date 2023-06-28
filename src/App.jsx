@@ -1,7 +1,9 @@
 import React from 'react'
+import { useMediaQuery } from 'react-responsive'
 
 import ToTopButton from './components/ToTopButton'
 import Navbar from './components/Navbar'
+import Menu from './components/MobileMenu'
 import Home from './sections/Home'
 import Problem from './sections/Problem'
 import Comparison from './sections/Comparison'
@@ -14,10 +16,12 @@ import Footer from './sections/Footer'
 import './App.css'
 
 function App() {
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 600px)' })
+    
     return (
         <>
             <ToTopButton />
-            <Navbar />
+            {isTabletOrMobile ? <Menu /> : <Navbar />}
             <Home />
             <Problem />
             <Comparison />
