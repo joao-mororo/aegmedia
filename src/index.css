@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 :root {
@@ -16,7 +17,6 @@ body {
   background-color: #fff;
   font-family: "Montserrat";
 }
-
 
 /* Scroll bar */
 ::-webkit-scrollbar {
