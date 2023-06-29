@@ -29,22 +29,29 @@
     border: none;
     outline: none;
     margin: .3rem 0;
-    padding: .5rem;
+    padding: .7rem;
     border-bottom: solid 1px transparent;
     transition: .1s;
     caret-color: var(--primary);
     color: #fff;
     border-radius: 5px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .input:focus {
     border-bottom: solid 1px var(--primary);
 }
+/* .input:autofill, */
+.input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #191f36 inset;
+    -webkit-text-fill-color: #fff !important;
+}
+
 
 .message {
-    min-height: 7rem;
+    min-height: 10rem;
 }
 
 .form section {
@@ -64,6 +71,13 @@
     font-weight: bold;
     font-size: 1rem;
     transition: .2s;
+}
+
+.submit:disabled,
+.submit:disabled:hover {
+    background-color: var(--primary-dark);
+    color: #000;
+    cursor: default;
 }
 
 .submit:hover {
